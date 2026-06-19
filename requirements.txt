@@ -1,0 +1,28 @@
+# ============================================================
+# requirements.txt
+# Proyecto: Calidad del Agua — Caquetá
+# Tesis de Maestría — Universidad Autónoma de Occidente
+# Autor: Jairo Andrés Pérez Hurtatis
+# ============================================================
+# Instalación: pip install -r requirements.txt
+# Python: 3.10+
+# ============================================================
+
+# Manipulación y análisis de datos
+pandas==3.0.2
+numpy==2.4.4
+
+# Modelos de aprendizaje automático
+scikit-learn==1.8.0
+xgboost==3.2.0
+imbalanced-learn==0.14.1
+
+# Visualización
+matplotlib==3.10.9
+seaborn==0.13.2
+
+# Exportación Excel
+openpyxl==3.1.5
+
+# Serialización de modelos
+joblib==1.5.3

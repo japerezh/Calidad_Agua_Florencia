@@ -1,0 +1,192 @@
+=================================================================
+  LOG DE ALERTAS — SISTEMA MONITOREO HÍDRICO
+  Generado: 2026-05-08 09:44:56
+  Dataset: 2484 registros
+=================================================================
+
+DISTRIBUCIÓN DE NIVELES:
+  VERDE     :  2128 (85.7%)
+  AMARILLO  :   220 (8.9%)
+  ROJO      :    98 (3.9%)
+  CRITICO   :    38 (1.5%)
+
+EVENTOS DE DETERIORO DETECTADOS:
+  [AMARILLO] 2026-04-02 08:30 → 08:30 (0.2h) | Turb.máx=0.40 NTU | ICA.mín=92.9
+  [AMARILLO] 2026-04-02 09:00 → 09:00 (0.2h) | Turb.máx=0.35 NTU | ICA.mín=94.1
+  [CRITICO] 2026-04-02 14:00 → 00:30 (10.8h) | Turb.máx=13.87 NTU | ICA.mín=77.9
+  [ROJO] 2026-04-03 01:15 → 02:15 (1.2h) | Turb.máx=0.24 NTU | ICA.mín=77.3
+  [ROJO] 2026-04-03 02:45 → 10:45 (8.2h) | Turb.máx=1.02 NTU | ICA.mín=73.6
+  [AMARILLO] 2026-04-05 10:15 → 10:15 (0.2h) | Turb.máx=0.23 NTU | ICA.mín=92.2
+  [CRITICO] 2026-04-06 09:00 → 23:30 (14.8h) | Turb.máx=16.00 NTU | ICA.mín=75.9
+  [AMARILLO] 2026-04-07 00:00 → 00:00 (0.2h) | Turb.máx=0.12 NTU | ICA.mín=78.7
+  [AMARILLO] 2026-04-07 00:45 → 00:45 (0.2h) | Turb.máx=0.08 NTU | ICA.mín=79.7
+  [AMARILLO] 2026-04-07 01:45 → 01:45 (0.2h) | Turb.máx=1.18 NTU | ICA.mín=79.9
+  [AMARILLO] 2026-04-07 02:15 → 05:00 (3.0h) | Turb.máx=1.31 NTU | ICA.mín=77.9
+  [AMARILLO] 2026-04-07 05:30 → 05:45 (0.5h) | Turb.máx=1.28 NTU | ICA.mín=79.0
+  [AMARILLO] 2026-04-07 06:15 → 06:30 (0.5h) | Turb.máx=1.40 NTU | ICA.mín=78.9
+  [AMARILLO] 2026-04-09 01:30 → 03:30 (2.2h) | Turb.máx=1.37 NTU | ICA.mín=92.3
+  [CRITICO] 2026-04-11 07:30 → 14:45 (7.5h) | Turb.máx=11.65 NTU | ICA.mín=86.8
+  [CRITICO] 2026-04-13 15:30 → 23:15 (8.0h) | Turb.máx=14.35 NTU | ICA.mín=86.2
+  [AMARILLO] 2026-04-13 23:45 → 00:15 (0.8h) | Turb.máx=0.63 NTU | ICA.mín=96.5
+  [AMARILLO] 2026-04-14 22:45 → 23:00 (0.5h) | Turb.máx=0.17 NTU | ICA.mín=95.8
+  [AMARILLO] 2026-04-15 13:30 → 13:30 (0.2h) | Turb.máx=0.32 NTU | ICA.mín=94.9
+  [CRITICO] 2026-04-15 16:00 → 20:45 (5.0h) | Turb.máx=14.69 NTU | ICA.mín=80.6
+  [AMARILLO] 2026-04-17 03:00 → 03:00 (0.2h) | Turb.máx=0.21 NTU | ICA.mín=96.6
+  [CRITICO] 2026-04-17 10:00 → 15:00 (5.2h) | Turb.máx=13.06 NTU | ICA.mín=82.9
+  [AMARILLO] 2026-04-17 19:00 → 19:00 (0.2h) | Turb.máx=0.24 NTU | ICA.mín=92.9
+  [AMARILLO] 2026-04-18 08:00 → 08:00 (0.2h) | Turb.máx=0.41 NTU | ICA.mín=97.2
+  [AMARILLO] 2026-04-18 19:30 → 19:30 (0.2h) | Turb.máx=0.17 NTU | ICA.mín=95.7
+  [AMARILLO] 2026-04-18 20:00 → 20:00 (0.2h) | Turb.máx=0.37 NTU | ICA.mín=95.5
+  [AMARILLO] 2026-04-19 03:30 → 03:30 (0.2h) | Turb.máx=0.28 NTU | ICA.mín=97.1
+  [AMARILLO] 2026-04-19 13:30 → 13:30 (0.2h) | Turb.máx=0.30 NTU | ICA.mín=96.1
+  [CRITICO] 2026-04-19 14:00 → 19:00 (5.2h) | Turb.máx=14.44 NTU | ICA.mín=79.9
+  [AMARILLO] 2026-04-20 03:45 → 04:00 (0.5h) | Turb.máx=0.42 NTU | ICA.mín=95.3
+  [AMARILLO] 2026-04-21 06:45 → 06:45 (0.2h) | Turb.máx=0.34 NTU | ICA.mín=97.1
+  [AMARILLO] 2026-04-21 08:15 → 08:15 (0.2h) | Turb.máx=0.52 NTU | ICA.mín=86.7
+  [AMARILLO] 2026-04-21 17:00 → 17:00 (0.2h) | Turb.máx=0.26 NTU | ICA.mín=95.3
+  [AMARILLO] 2026-04-22 08:30 → 08:30 (0.2h) | Turb.máx=0.51 NTU | ICA.mín=96.0
+  [CRITICO] 2026-04-22 09:00 → 13:45 (5.0h) | Turb.máx=11.91 NTU | ICA.mín=82.1
+  [AMARILLO] 2026-04-23 03:00 → 03:00 (0.2h) | Turb.máx=0.21 NTU | ICA.mín=97.4
+  [CRITICO] 2026-04-24 15:00 → 18:45 (4.0h) | Turb.máx=14.03 NTU | ICA.mín=79.4
+  [AMARILLO] 2026-04-24 19:15 → 19:30 (0.5h) | Turb.máx=0.31 NTU | ICA.mín=95.2
+  [AMARILLO] 2026-04-25 13:45 → 13:45 (0.2h) | Turb.máx=0.37 NTU | ICA.mín=94.8
+  [AMARILLO] 2026-04-26 03:15 → 03:15 (0.2h) | Turb.máx=0.29 NTU | ICA.mín=96.1
+  [AMARILLO] 2026-04-26 14:00 → 14:00 (0.2h) | Turb.máx=0.34 NTU | ICA.mín=95.4
+
+REGISTROS ROJO/CRÍTICO DETALLADOS:
+  2026-04-02 14:30 | Turb=13.50 | ICA=92.3 | Score=0.856 | CRITICO | Umbral: Turbidez=13.50 NTU | Score IA: 0.856
+  2026-04-02 14:45 | Turb=12.83 | ICA=89.2 | Score=0.840 | CRITICO | Umbral: Turbidez=12.83 NTU | Score IA: 0.840
+  2026-04-02 15:00 | Turb=12.76 | ICA=88.5 | Score=0.841 | CRITICO | Umbral: Turbidez=12.76 NTU | Score IA: 0.841
+  2026-04-02 15:15 | Turb=12.04 | ICA=88.1 | Score=0.841 | CRITICO | Umbral: Turbidez=12.04 NTU | Score IA: 0.841
+  2026-04-02 15:30 | Turb=13.87 | ICA=88.9 | Score=0.913 | CRITICO | Umbral: Turbidez=13.87 NTU | Score IA: 0.913
+  2026-04-02 15:45 | Turb=9.49 | ICA=87.7 | Score=0.876 | ROJO | Umbral: Turbidez=9.49 NTU | Score IA: 0.876
+  2026-04-02 16:00 | Turb=7.65 | ICA=86.8 | Score=0.870 | ROJO | Umbral: Turbidez=7.65 NTU | Score IA: 0.870
+  2026-04-02 16:15 | Turb=6.47 | ICA=86.1 | Score=0.810 | ROJO | Umbral: Turbidez=6.47 NTU | Score IA: 0.810
+  2026-04-02 16:30 | Turb=5.43 | ICA=86.0 | Score=0.859 | ROJO | Umbral: Turbidez=5.43 NTU | Score IA: 0.859
+  2026-04-02 16:45 | Turb=5.26 | ICA=86.1 | Score=0.811 | ROJO | Umbral: Turbidez=5.26 NTU | Score IA: 0.811
+  2026-04-02 17:00 | Turb=5.03 | ICA=84.3 | Score=0.816 | ROJO | Umbral: Turbidez=5.03 NTU | Score IA: 0.816
+  2026-04-02 17:15 | Turb=4.07 | ICA=84.9 | Score=0.784 | ROJO | Score IA: 0.784
+  2026-04-02 17:30 | Turb=4.14 | ICA=82.7 | Score=0.769 | ROJO | Score IA: 0.769
+  2026-04-02 17:45 | Turb=3.54 | ICA=83.3 | Score=0.760 | ROJO | Score IA: 0.760
+  2026-04-02 18:00 | Turb=3.18 | ICA=83.2 | Score=0.772 | ROJO | Score IA: 0.772
+  2026-04-02 18:15 | Turb=3.09 | ICA=81.8 | Score=0.745 | ROJO | Score IA: 0.745
+  2026-04-02 18:30 | Turb=2.77 | ICA=84.2 | Score=0.767 | ROJO | Score IA: 0.767
+  2026-04-02 18:45 | Turb=2.41 | ICA=81.1 | Score=0.787 | ROJO | Score IA: 0.787
+  2026-04-02 19:00 | Turb=2.42 | ICA=81.0 | Score=0.719 | ROJO | Score IA: 0.719
+  2026-04-02 19:15 | Turb=1.95 | ICA=80.9 | Score=0.715 | ROJO | Score IA: 0.715
+  2026-04-02 19:30 | Turb=1.99 | ICA=81.1 | Score=0.655 | ROJO | Score IA: 0.655
+  2026-04-02 22:45 | Turb=0.87 | ICA=79.9 | Score=0.395 | ROJO | Umbral: ICA=79.9 | Velocidad: ΔpH=0.180/15min | Score IA: 0.395
+  2026-04-03 02:00 | Turb=0.21 | ICA=78.3 | Score=0.149 | ROJO | Umbral: ICA=78.3 | Velocidad: ΔpH=0.150/15min
+  2026-04-03 08:00 | Turb=0.22 | ICA=75.9 | Score=0.143 | ROJO | Umbral: ICA=75.9 | Velocidad: ΔpH=0.150/15min
+  2026-04-03 08:15 | Turb=0.21 | ICA=76.3 | Score=0.203 | ROJO | Umbral: ICA=76.3 | Velocidad: ΔpH=0.200/15min
+  2026-04-06 09:15 | Turb=16.00 | ICA=83.0 | Score=0.805 | CRITICO | Umbral: Turbidez=16.00 NTU | Score IA: 0.805
+  2026-04-06 09:30 | Turb=15.93 | ICA=82.2 | Score=0.868 | CRITICO | Umbral: Turbidez=15.93 NTU | Score IA: 0.868
+  2026-04-06 09:45 | Turb=15.44 | ICA=82.7 | Score=0.947 | CRITICO | Umbral: Turbidez=15.44 NTU | Score IA: 0.947
+  2026-04-06 10:00 | Turb=14.22 | ICA=80.9 | Score=1.000 | CRITICO | Umbral: Turbidez=14.22 NTU | Score IA: 1.000
+  2026-04-06 10:15 | Turb=14.59 | ICA=80.5 | Score=0.964 | CRITICO | Umbral: Turbidez=14.59 NTU | Score IA: 0.964
+  2026-04-06 10:30 | Turb=10.15 | ICA=80.0 | Score=0.978 | CRITICO | Umbral: Turbidez=10.15 NTU | Score IA: 0.978
+  2026-04-06 10:45 | Turb=8.21 | ICA=81.1 | Score=0.930 | ROJO | Umbral: Turbidez=8.21 NTU | Score IA: 0.930
+  2026-04-06 11:00 | Turb=7.88 | ICA=79.9 | Score=0.823 | CRITICO | Umbral: Turbidez=7.88 NTU, ICA=79.9 | Score IA: 0.823
+  2026-04-06 11:15 | Turb=6.58 | ICA=80.1 | Score=0.896 | ROJO | Umbral: Turbidez=6.58 NTU | Score IA: 0.896
+  2026-04-06 11:30 | Turb=7.62 | ICA=80.0 | Score=0.852 | ROJO | Umbral: Turbidez=7.62 NTU | Score IA: 0.852
+  2026-04-06 11:45 | Turb=6.30 | ICA=80.1 | Score=0.828 | ROJO | Umbral: Turbidez=6.30 NTU | Score IA: 0.828
+  2026-04-06 12:00 | Turb=5.76 | ICA=79.6 | Score=0.821 | CRITICO | Umbral: Turbidez=5.76 NTU, ICA=79.6 | Score IA: 0.821
+  2026-04-06 12:15 | Turb=5.03 | ICA=80.9 | Score=0.801 | ROJO | Umbral: Turbidez=5.03 NTU | Score IA: 0.801
+  2026-04-06 12:30 | Turb=5.15 | ICA=82.7 | Score=0.768 | ROJO | Umbral: Turbidez=5.15 NTU | Score IA: 0.768
+  2026-04-06 12:45 | Turb=4.45 | ICA=80.7 | Score=0.722 | ROJO | Score IA: 0.722
+  2026-04-06 13:00 | Turb=4.33 | ICA=82.6 | Score=0.697 | ROJO | Score IA: 0.697
+  2026-04-06 13:15 | Turb=4.63 | ICA=84.0 | Score=0.780 | ROJO | Score IA: 0.780
+  2026-04-06 13:30 | Turb=3.73 | ICA=81.2 | Score=0.761 | ROJO | Score IA: 0.761
+  2026-04-06 13:45 | Turb=3.75 | ICA=84.0 | Score=0.689 | ROJO | Score IA: 0.689
+  2026-04-06 14:00 | Turb=3.15 | ICA=82.2 | Score=0.659 | ROJO | Score IA: 0.659
+  2026-04-06 14:15 | Turb=3.07 | ICA=82.9 | Score=0.662 | ROJO | Score IA: 0.662
+  2026-04-11 08:00 | Turb=11.00 | ICA=87.7 | Score=0.835 | CRITICO | Umbral: Turbidez=11.00 NTU | Score IA: 0.835
+  2026-04-11 08:15 | Turb=11.65 | ICA=86.8 | Score=0.828 | CRITICO | Umbral: Turbidez=11.65 NTU | Score IA: 0.828
+  2026-04-11 08:30 | Turb=11.24 | ICA=87.0 | Score=0.889 | CRITICO | Umbral: Turbidez=11.24 NTU | Score IA: 0.889
+  2026-04-11 08:45 | Turb=10.05 | ICA=88.6 | Score=0.909 | CRITICO | Umbral: Turbidez=10.05 NTU | Score IA: 0.909
+  2026-04-11 09:00 | Turb=9.41 | ICA=88.3 | Score=0.888 | ROJO | Umbral: Turbidez=9.41 NTU | Score IA: 0.888
+  2026-04-11 09:15 | Turb=7.66 | ICA=90.2 | Score=0.907 | ROJO | Umbral: Turbidez=7.66 NTU | Score IA: 0.907
+  2026-04-11 09:30 | Turb=6.03 | ICA=91.4 | Score=0.871 | ROJO | Umbral: Turbidez=6.03 NTU | Score IA: 0.871
+  2026-04-11 09:45 | Turb=4.70 | ICA=92.6 | Score=0.860 | ROJO | Score IA: 0.860
+  2026-04-11 10:00 | Turb=4.67 | ICA=92.5 | Score=0.859 | ROJO | Score IA: 0.859
+  2026-04-11 10:15 | Turb=4.84 | ICA=93.3 | Score=0.803 | ROJO | Velocidad: ΔpH=0.190/15min | Score IA: 0.803
+  2026-04-11 10:30 | Turb=4.34 | ICA=93.3 | Score=0.774 | ROJO | Score IA: 0.774
+  2026-04-11 10:45 | Turb=4.14 | ICA=94.0 | Score=0.763 | ROJO | Score IA: 0.763
+  2026-04-11 11:00 | Turb=3.33 | ICA=94.3 | Score=0.770 | ROJO | Score IA: 0.770
+  2026-04-11 11:15 | Turb=3.20 | ICA=94.5 | Score=0.688 | ROJO | Score IA: 0.688
+  2026-04-11 11:30 | Turb=2.54 | ICA=95.0 | Score=0.726 | ROJO | Score IA: 0.726
+  2026-04-11 11:45 | Turb=2.55 | ICA=95.0 | Score=0.708 | ROJO | Score IA: 0.708
+  2026-04-11 12:00 | Turb=2.37 | ICA=95.3 | Score=0.708 | ROJO | Score IA: 0.708
+  2026-04-11 12:15 | Turb=2.01 | ICA=95.3 | Score=0.663 | ROJO | Score IA: 0.663
+  2026-04-13 15:45 | Turb=14.33 | ICA=86.2 | Score=0.844 | CRITICO | Umbral: Turbidez=14.33 NTU | Score IA: 0.844
+  2026-04-13 16:00 | Turb=13.65 | ICA=87.0 | Score=0.859 | CRITICO | Umbral: Turbidez=13.65 NTU | Score IA: 0.859
+  2026-04-13 16:15 | Turb=14.27 | ICA=86.9 | Score=0.918 | CRITICO | Umbral: Turbidez=14.27 NTU | Score IA: 0.918
+  2026-04-13 16:30 | Turb=14.35 | ICA=86.7 | Score=0.864 | CRITICO | Umbral: Turbidez=14.35 NTU | Score IA: 0.864
+  2026-04-13 16:45 | Turb=12.59 | ICA=88.1 | Score=0.892 | CRITICO | Umbral: Turbidez=12.59 NTU | Score IA: 0.892
+  2026-04-13 17:00 | Turb=10.36 | ICA=89.8 | Score=0.889 | CRITICO | Umbral: Turbidez=10.36 NTU | Score IA: 0.889
+  2026-04-13 17:15 | Turb=7.38 | ICA=92.4 | Score=0.867 | ROJO | Umbral: Turbidez=7.38 NTU | Score IA: 0.867
+  2026-04-13 17:30 | Turb=6.38 | ICA=93.1 | Score=0.841 | ROJO | Umbral: Turbidez=6.38 NTU | Score IA: 0.841
+  2026-04-13 17:45 | Turb=5.88 | ICA=93.8 | Score=0.827 | ROJO | Umbral: Turbidez=5.88 NTU | Score IA: 0.827
+  2026-04-13 18:00 | Turb=6.16 | ICA=93.6 | Score=0.778 | ROJO | Umbral: Turbidez=6.16 NTU | Score IA: 0.778
+  2026-04-13 18:15 | Turb=5.51 | ICA=94.2 | Score=0.823 | ROJO | Umbral: Turbidez=5.51 NTU | Score IA: 0.823
+  2026-04-13 18:30 | Turb=4.99 | ICA=94.1 | Score=0.792 | ROJO | Score IA: 0.792
+  2026-04-13 18:45 | Turb=4.74 | ICA=94.2 | Score=0.768 | ROJO | Score IA: 0.768
+  2026-04-13 19:00 | Turb=3.69 | ICA=95.3 | Score=0.737 | ROJO | Score IA: 0.737
+  2026-04-13 19:15 | Turb=3.38 | ICA=95.4 | Score=0.704 | ROJO | Score IA: 0.704
+  2026-04-13 19:30 | Turb=3.08 | ICA=95.9 | Score=0.688 | ROJO | Score IA: 0.688
+  2026-04-13 19:45 | Turb=2.68 | ICA=95.9 | Score=0.729 | ROJO | Score IA: 0.729
+  2026-04-13 20:00 | Turb=2.43 | ICA=95.9 | Score=0.695 | ROJO | Score IA: 0.695
+  2026-04-13 20:15 | Turb=2.32 | ICA=96.1 | Score=0.732 | ROJO | Score IA: 0.732
+  2026-04-13 20:30 | Turb=2.01 | ICA=96.4 | Score=0.706 | ROJO | Score IA: 0.706
+  2026-04-15 16:30 | Turb=11.57 | ICA=84.0 | Score=0.790 | CRITICO | Umbral: Turbidez=11.57 NTU | Score IA: 0.790
+  2026-04-15 16:45 | Turb=14.69 | ICA=80.6 | Score=0.900 | CRITICO | Umbral: Turbidez=14.69 NTU | Score IA: 0.900
+  2026-04-15 17:00 | Turb=11.04 | ICA=83.4 | Score=0.878 | CRITICO | Umbral: Turbidez=11.04 NTU | Score IA: 0.878
+  2026-04-15 17:15 | Turb=9.15 | ICA=88.0 | Score=0.894 | ROJO | Umbral: Turbidez=9.15 NTU | Score IA: 0.894
+  2026-04-15 17:30 | Turb=7.09 | ICA=87.0 | Score=0.802 | ROJO | Umbral: Turbidez=7.09 NTU | Score IA: 0.802
+  2026-04-15 17:45 | Turb=6.43 | ICA=88.8 | Score=0.781 | ROJO | Umbral: Turbidez=6.43 NTU | Score IA: 0.781
+  2026-04-15 18:00 | Turb=5.11 | ICA=90.3 | Score=0.761 | ROJO | Umbral: Turbidez=5.11 NTU | Score IA: 0.761
+  2026-04-15 18:15 | Turb=3.35 | ICA=93.6 | Score=0.739 | ROJO | Score IA: 0.739
+  2026-04-15 18:30 | Turb=1.38 | ICA=95.3 | Score=0.757 | ROJO | Score IA: 0.757
+  2026-04-15 18:45 | Turb=1.00 | ICA=95.2 | Score=0.704 | ROJO | Score IA: 0.704
+  2026-04-17 10:30 | Turb=10.37 | ICA=84.5 | Score=0.740 | CRITICO | Umbral: Turbidez=10.37 NTU | Score IA: 0.740
+  2026-04-17 10:45 | Turb=13.06 | ICA=82.9 | Score=0.819 | CRITICO | Umbral: Turbidez=13.06 NTU | Score IA: 0.819
+  2026-04-17 11:00 | Turb=11.39 | ICA=84.2 | Score=0.884 | CRITICO | Umbral: Turbidez=11.39 NTU | Score IA: 0.884
+  2026-04-17 11:15 | Turb=8.43 | ICA=88.1 | Score=0.834 | ROJO | Umbral: Turbidez=8.43 NTU | Score IA: 0.834
+  2026-04-17 11:30 | Turb=6.76 | ICA=89.5 | Score=0.782 | ROJO | Umbral: Turbidez=6.76 NTU | Score IA: 0.782
+  2026-04-17 11:45 | Turb=7.61 | ICA=88.3 | Score=0.771 | ROJO | Umbral: Turbidez=7.61 NTU | Score IA: 0.771
+  2026-04-17 12:00 | Turb=6.29 | ICA=91.0 | Score=0.744 | ROJO | Umbral: Turbidez=6.29 NTU | Score IA: 0.744
+  2026-04-17 12:15 | Turb=3.67 | ICA=93.2 | Score=0.771 | ROJO | Score IA: 0.771
+  2026-04-17 12:30 | Turb=3.32 | ICA=94.0 | Score=0.778 | ROJO | Score IA: 0.778
+  2026-04-17 12:45 | Turb=1.00 | ICA=94.5 | Score=0.792 | ROJO | Score IA: 0.792
+  2026-04-17 13:00 | Turb=1.00 | ICA=95.0 | Score=0.677 | ROJO | Score IA: 0.677
+  2026-04-19 14:30 | Turb=12.55 | ICA=81.3 | Score=0.810 | CRITICO | Umbral: Turbidez=12.55 NTU | Velocidad: ΔpH=0.150/15min | Score IA: 0.810
+  2026-04-19 14:45 | Turb=14.44 | ICA=79.9 | Score=0.944 | CRITICO | Umbral: Turbidez=14.44 NTU | Score IA: 0.944
+  2026-04-19 15:00 | Turb=11.60 | ICA=83.3 | Score=0.861 | CRITICO | Umbral: Turbidez=11.60 NTU | Score IA: 0.861
+  2026-04-19 15:15 | Turb=10.71 | ICA=85.1 | Score=0.873 | CRITICO | Umbral: Turbidez=10.71 NTU | Score IA: 0.873
+  2026-04-19 15:30 | Turb=8.08 | ICA=87.9 | Score=0.845 | ROJO | Umbral: Turbidez=8.08 NTU | Velocidad: ΔpH=0.160/15min | Score IA: 0.845
+  2026-04-19 15:45 | Turb=5.55 | ICA=89.1 | Score=0.801 | ROJO | Umbral: Turbidez=5.55 NTU | Score IA: 0.801
+  2026-04-19 16:00 | Turb=2.81 | ICA=94.4 | Score=0.778 | ROJO | Score IA: 0.778
+  2026-04-19 16:15 | Turb=1.00 | ICA=96.1 | Score=0.725 | ROJO | Score IA: 0.725
+  2026-04-19 16:30 | Turb=1.00 | ICA=95.4 | Score=0.725 | ROJO | Score IA: 0.725
+  2026-04-19 16:45 | Turb=0.26 | ICA=95.9 | Score=0.715 | ROJO | Velocidad: ΔpH=0.170/15min | Score IA: 0.715
+  2026-04-22 09:30 | Turb=9.29 | ICA=86.2 | Score=0.695 | ROJO | Umbral: Turbidez=9.29 NTU | Score IA: 0.695
+  2026-04-22 09:45 | Turb=11.91 | ICA=82.1 | Score=0.763 | CRITICO | Umbral: Turbidez=11.91 NTU | Score IA: 0.763
+  2026-04-22 10:00 | Turb=10.13 | ICA=85.5 | Score=0.847 | CRITICO | Umbral: Turbidez=10.13 NTU | Score IA: 0.847
+  2026-04-22 10:15 | Turb=9.01 | ICA=87.1 | Score=0.786 | ROJO | Umbral: Turbidez=9.01 NTU | Score IA: 0.786
+  2026-04-22 10:30 | Turb=8.31 | ICA=87.4 | Score=0.779 | ROJO | Umbral: Turbidez=8.31 NTU | Score IA: 0.779
+  2026-04-22 10:45 | Turb=7.95 | ICA=86.8 | Score=0.764 | ROJO | Umbral: Turbidez=7.95 NTU | Score IA: 0.764
+  2026-04-22 11:00 | Turb=5.32 | ICA=89.0 | Score=0.789 | ROJO | Umbral: Turbidez=5.32 NTU | Score IA: 0.789
+  2026-04-22 11:15 | Turb=3.86 | ICA=91.8 | Score=0.778 | ROJO | Score IA: 0.778
+  2026-04-22 11:30 | Turb=2.19 | ICA=94.4 | Score=0.721 | ROJO | Score IA: 0.721
+  2026-04-22 11:45 | Turb=1.00 | ICA=94.5 | Score=0.766 | ROJO | Score IA: 0.766
+  2026-04-22 12:00 | Turb=0.34 | ICA=95.0 | Score=0.671 | ROJO | Score IA: 0.671
+  2026-04-24 15:30 | Turb=10.66 | ICA=85.3 | Score=0.723 | CRITICO | Umbral: Turbidez=10.66 NTU | Score IA: 0.723
+  2026-04-24 15:45 | Turb=14.03 | ICA=79.4 | Score=0.906 | CRITICO | Umbral: Turbidez=14.03 NTU | Score IA: 0.906
+  2026-04-24 16:00 | Turb=10.45 | ICA=85.5 | Score=0.834 | CRITICO | Umbral: Turbidez=10.45 NTU | Score IA: 0.834
+  2026-04-24 16:15 | Turb=9.22 | ICA=85.9 | Score=0.845 | ROJO | Umbral: Turbidez=9.22 NTU | Score IA: 0.845
+  2026-04-24 16:30 | Turb=5.53 | ICA=91.3 | Score=0.858 | ROJO | Umbral: Turbidez=5.53 NTU | Score IA: 0.858
+  2026-04-24 16:45 | Turb=5.52 | ICA=90.6 | Score=0.789 | ROJO | Umbral: Turbidez=5.52 NTU | Score IA: 0.789
+  2026-04-24 17:00 | Turb=3.27 | ICA=92.9 | Score=0.708 | ROJO | Score IA: 0.708
+  2026-04-24 17:15 | Turb=1.95 | ICA=96.3 | Score=0.725 | ROJO | Score IA: 0.725
+  2026-04-24 17:30 | Turb=1.00 | ICA=94.0 | Score=0.711 | ROJO | Score IA: 0.711
+  2026-04-24 17:45 | Turb=0.25 | ICA=96.2 | Score=0.677 | ROJO | Score IA: 0.677
