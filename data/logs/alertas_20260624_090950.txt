@@ -1,0 +1,23 @@
+=================================================================
+  LOG DE ALERTAS — AquaSense Pro
+  2026-06-24 09:09:50
+  Registros evaluados: 2484
+  Features IA (sin turbidez): 26
+=================================================================
+
+UMBRALES AquaSense Pro:
+  pH      : NORMAL 6.5–8.5 | CRÍTICO <6.5 o >8.5
+  OD      : NORMAL >5.0 mg/L | CRÍTICO <5.0 mg/L
+  Turbidez: NORMAL <50 NTU | CRÍTICO >50 NTU
+  Temp    : NORMAL 5–35°C | CRÍTICO <5 o >35°C
+
+DISTRIBUCIÓN NIVEL GLOBAL:
+  NORMAL    : 0 (0.0%)
+  BUENA     : 2484 (100.0%)
+  MALA      : 0 (0.0%)
+  CRÍTICO   : 0 (0.0%)
+
+DISTRIBUCIÓN NIVEL IA (sin turbidez):
+  VERDE     : 942 (37.9%)
+  AMARILLO  : 1242 (50.0%)
+  ROJO      : 300 (12.1%)

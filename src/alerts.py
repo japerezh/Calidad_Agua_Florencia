@@ -738,8 +738,10 @@ with open(ruta_log, 'w', encoding='utf-8') as f:
     for niv in ['VERDE','AMARILLO','ROJO']:
         n = dist_ia.get(niv, 0)
         f.write(f"  {niv:<10}: {n} ({n/len(df_fe)*100:.1f}%)\n")
-    f.write(f"\nRECALL ANOMALÍAS REALES: "
-            f"{len(det_total)/len(reales)*100:.1f}%\n")
+    f.write(f"\nRECALL ANOMALÍAS REALES [Capa 1 Operativo]: "
+            f"{len(det_total_op)/len(reales)*100:.1f}%\n")
+    f.write(f"RECALL ANOMALÍAS REALES [Capa 2 ML]: "
+            f"{len(det_total_ia)/len(reales)*100:.1f}%\n")
 
 print(f"\n{'='*65}")
 print("  ARCHIVOS EXPORTADOS")
