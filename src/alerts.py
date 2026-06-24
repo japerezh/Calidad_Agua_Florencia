@@ -230,7 +230,17 @@ def nivel_global(niveles_vars):
         peor = 3
     return ['NORMAL','BUENA','MALA','CRÍTICO'][peor]
 
+def nivel_alerta_operativo(turb, delta_turb, prob_ac):
+    """Capa 1 — Regla operativa basada en turbidez medida directamente."""
+    delta = 0.0 if pd.isna(delta_turb) else delta_turb
+    if turb > 5.0:
+        return 'ROJO'
+    elif delta > 1.5 or prob_ac > 0.20:
+        return 'AMARILLO'
+    return 'VERDE'
+
 def nivel_alerta_ia(score, prob_ac, delta_turb):
+    """Capa 2 — Experimento ML con features independientes de turbidez."""
     delta = 0.0 if pd.isna(delta_turb) else delta_turb
     if score >= 0.65 or (score >= 0.45 and prob_ac > 0.30):
         return 'ROJO'
@@ -250,6 +260,9 @@ for _, row in df_fe.iterrows():
     niv_ia   = nivel_alerta_ia(row['anomaly_score'],
                                row['prob_aceptable'],
                                row['turb_delta1_abs'])
+    niv_op   = nivel_alerta_operativo(row['Turbidez_NTU'],
+                                      row['turb_delta1_abs'],
+                                      row['prob_aceptable'])
 
     vars_alertas = []
     for niv, desc in [(niv_ph,desc_ph),(niv_do,desc_do),
@@ -264,6 +277,7 @@ for _, row in df_fe.iterrows():
         'nivel_temp':      niv_temp,
         'nivel_global':    niv_glob,
         'nivel_IA':        niv_ia,
+        'nivel_operativo': niv_op,
         'vars_en_alerta':  ' | '.join(vars_alertas) if vars_alertas
                            else 'Todas normales',
     })
@@ -300,7 +314,16 @@ for niv in ['NORMAL','BUENA','MALA','CRÍTICO']:
     print(f"  {niv:<10}: {n:>5} ({n/len(df_fe)*100:>5.1f}%)  {barra}")
 
 print(f"\n{'─'*65}")
-print("  NIVEL IA (Isolation Forest — features sin turbidez)")
+print("  NIVEL OPERATIVO (Capa 1 — turbidez medida directamente)")
+print("─" * 65)
+dist_op = df_fe['nivel_operativo'].value_counts()
+for niv in ['VERDE','AMARILLO','ROJO']:
+    n = dist_op.get(niv, 0)
+    barra = '█' * int(n/len(df_fe)*50)
+    print(f"  {niv:<10}: {n:>5} ({n/len(df_fe)*100:>5.1f}%)  {barra}")
+
+print(f"\n{'─'*65}")
+print("  NIVEL IA (Capa 2 — Isolation Forest sin turbidez, experimento ML)")
 print("─" * 65)
 dist_ia = df_fe['nivel_IA'].value_counts()
 for niv in ['VERDE','AMARILLO','ROJO']:
@@ -312,15 +335,20 @@ print(f"\n{'─'*65}")
 print("  VERIFICACIÓN CONTRA EVENTOS REALES")
 print("─" * 65)
 reales    = df_fe[df_fe['anomalia']==1]
-det_rojo  = reales[reales['nivel_IA']=='ROJO']
-det_total = reales[reales['nivel_IA'].isin(['AMARILLO','ROJO'])]
-print(f"  Anomalías reales en dataset  : {len(reales)}")
-print(f"  Detectadas ROJO (IA)         : {len(det_rojo)} "
-      f"({len(det_rojo)/len(reales)*100:.1f}%)")
-print(f"  Detectadas AMARILLO+ROJO     : {len(det_total)} "
-      f"({len(det_total)/len(reales)*100:.1f}%)")
-print(f"  NOTA: Score IA calculado con {len(FEATURES_ANOM)} features "
-      f"independientes de turbidez")
+det_rojo_op  = reales[reales['nivel_operativo']=='ROJO']
+det_total_op = reales[reales['nivel_operativo'].isin(['AMARILLO','ROJO'])]
+det_rojo_ia  = reales[reales['nivel_IA']=='ROJO']
+det_total_ia = reales[reales['nivel_IA'].isin(['AMARILLO','ROJO'])]
+print(f"  Anomalías reales en dataset      : {len(reales)}")
+print(f"  [Capa 1 Operativo] ROJO          : {len(det_rojo_op)} "
+      f"({len(det_rojo_op)/len(reales)*100:.1f}%)")
+print(f"  [Capa 1 Operativo] AMARILLO+ROJO : {len(det_total_op)} "
+      f"({len(det_total_op)/len(reales)*100:.1f}%)")
+print(f"  [Capa 2 ML] ROJO                 : {len(det_rojo_ia)} "
+      f"({len(det_rojo_ia)/len(reales)*100:.1f}%)")
+print(f"  [Capa 2 ML] AMARILLO+ROJO        : {len(det_total_ia)} "
+      f"({len(det_total_ia)/len(reales)*100:.1f}%)")
+print(f"  NOTA: Capa 2 con {len(FEATURES_ANOM)} features sin turbidez")
 
 # ============================================================
 # FIGURA 9: Dashboard completo con todas las variables
