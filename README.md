@@ -79,7 +79,7 @@ Calidad_Agua/
 │   └── validation.py      ← Bloque 10: validación técnica OE4
 │
 ├── reports/
-│   ├── figures/           ← 13 figuras PNG
+│   ├── figures/           ← 12 figuras PNG
 │   └── metrics/
 │       ├── resultados_modelos.xlsx
 │       ├── reporte_alertas.xlsx
