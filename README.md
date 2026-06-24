@@ -38,14 +38,16 @@ El sistema fue desarrollado y validado sobre datos reales del **Río Hacha, Flor
 | Clasificación estado agua | Gradient Boosting | F1-macro = 0.7751 |
 | Predicción ICA | Random Forest | R² = 0.7896 / RMSE = 1.5129 |
 | Detección anomalías | RF + SMOTE | F1 = 0.4706 / AP = 0.4626 |
-| Recall sistema alertas | Motor multicapa | 100% (AMARILLO+ROJO combinados) |
-| Distribución alertas | Motor de alertas | VERDE 37.9% / AMARILLO 50.0% / ROJO 12.1% |
+| Recall sistema alertas (Capa 1 operativa) | Motor bicapa | 100% ROJO / 100% AMARILLO+ROJO |
+| Distribución alertas (Capa 1 operativa) | Motor bicapa | VERDE 80.2% / AMARILLO 16.6% / ROJO 3.2% |
+| Recall sistema alertas (Capa 2 ML) | Isolation Forest | 10.1% ROJO / 100% AMARILLO+ROJO |
+| Distribución alertas (Capa 2 ML) | Isolation Forest | VERDE 37.9% / AMARILLO 50.0% / ROJO 12.1% |
 
 > **Nota metodológica:** La detección de anomalías se evalúa con 26 features
 > independientes de turbidez para evitar fuga de etiqueta
-> (`anomalia = Turbidez_NTU > 5.0 NTU`). El recall del 100% corresponde
-> al sistema de alertas multicapa (AMARILLO+ROJO combinados), no al
-> detector supervisado aislado.
+> (`anomalia = Turbidez_NTU > 5.0 NTU`). El recall del 100% en AMARILLO+ROJO
+> corresponde a ambas capas del motor de alertas; la Capa 1 operativa es el
+> componente principal con tasa de activación selectiva del 19.8%.
 
 ---
 
@@ -73,7 +75,7 @@ Calidad_Agua/
 ├── src/
 │   ├── preprocessing.py   ← Bloque 1-3: carga, FE, splits
 │   ├── models.py          ← Bloque 5-7: clasificación, regresión, anomalías
-│   ├── alerts.py          ← Motor de alertas multicapa
+│   ├── alerts.py          ← Motor de alertas bicapa (Capa 1 operativa + Capa 2 ML)
 │   └── validation.py      ← Bloque 10: validación técnica OE4
 │
 ├── reports/
@@ -141,7 +143,7 @@ python src/preprocessing.py
 # Paso 2 — Entrenamiento y evaluación de modelos
 python src/models.py
 
-# Paso 3 — Motor de alertas
+# Paso 3 — Motor de alertas bicapa
 python src/alerts.py
 
 # Paso 4 — Validación técnica completa (OE4)
@@ -218,9 +220,22 @@ para evitar fuga de etiqueta.
 
 ---
 
-## Sistema de Alertas
+## Sistema de Alertas — Arquitectura Bicapa
 
-El motor combina 3 señales simultáneas evaluadas en el instante actual de medición (t):
+El motor de alertas implementa dos capas diferenciadas con propósitos distintos.
+
+### Capa 1 — Regla operativa (turbidez medida directamente)
+
+| Nivel | Condición | Registros | % | Acción |
+|---|---|---|---|---|
+| 🟢 VERDE | Turbidez ≤ 5.0 NTU y delta ≤ 1.5 NTU | 1.993 | 80.2% | Operación normal |
+| 🟡 AMARILLO | Delta > 1.5 NTU o P(ACEPTABLE) > 0.20 | 412 | 16.6% | Monitoreo elevado |
+| 🔴 ROJO | Turbidez > 5.0 NTU | 79 | 3.2% | Acción inmediata |
+
+**Recall sobre 79 eventos reales:** 100% en ROJO / 100% en AMARILLO+ROJO combinados  
+**Tasa de activación:** 19.8% (AMARILLO+ROJO) — componente operativo principal.
+
+### Capa 2 — Experimento ML (Isolation Forest sin turbidez)
 
 | Nivel | Condición | Registros | % | Acción |
 |---|---|---|---|---|
@@ -228,11 +243,14 @@ El motor combina 3 señales simultáneas evaluadas en el instante actual de medi
 | 🟡 AMARILLO | Score 0.35–0.65 o delta > 1.5 NTU o P(ACEPTABLE) > 0.20 | 1.242 | 50.0% | Monitoreo elevado |
 | 🔴 ROJO | Score ≥ 0.65 o (Score ≥ 0.45 y P(ACEPTABLE) > 0.30) | 300 | 12.1% | Acción inmediata |
 
-**Recall sobre 79 eventos reales:** 100% (AMARILLO+ROJO combinados)
+**Recall sobre 79 eventos reales:** 10.1% en ROJO / 100% en AMARILLO+ROJO combinados  
+**Tasa de activación:** 62.1% — resultado experimental con 26 features independientes de turbidez.
 
 > El sistema detecta condiciones en el instante actual a intervalos de
-> 15 minutos. El nivel AMARILLO actúa como indicador de deterioro en
-> progreso antes de que las condiciones escalen a nivel ROJO.
+> 15 minutos. La Capa 1 es el componente operativo principal; la Capa 2
+> es un experimento ML complementario evaluado sin acceso a turbidez
+> para garantizar validez metodológica. El recall del 100% en AMARILLO+ROJO
+> de la Capa 2 se interpreta siempre junto a su tasa de activación del 62.1%.
 
 ---
 
@@ -263,18 +281,17 @@ El motor combina 3 señales simultáneas evaluadas en el instante actual de medi
 | fig6_anomalias_tiempo.png | Anomalías en el tiempo |
 | fig7_precision_recall.png | Curvas Precision-Recall |
 | fig8_confusion_anomalias.png | Matrices confusión anomalías |
-| fig9_dashboard_alertas.png | Dashboard de alertas |
-| fig10_analisis_deterioro.png | Análisis de deterioro |
-| fig11_validacion_cruzada.png | Validación cruzada |
-| fig12_robustez_ruido.png | Robustez frente a ruido |
-| fig13_curvas_aprendizaje.png | Curvas de aprendizaje |
+| fig9_analisis_deterioro.png | Análisis de deterioro |
+| fig10_validacion_cruzada.png | Validación cruzada |
+| fig11_robustez_ruido.png | Robustez frente a ruido |
+| fig12_curvas_aprendizaje.png | Curvas de aprendizaje |
 
 ### Excel (reports/metrics/)
 
 | Archivo | Hojas | Contenido |
 |---|---|---|
 | resultados_modelos.xlsx | 6 | Métricas por modelo y tarea |
-| reporte_alertas.xlsx | 4 | Eventos y alertas detectadas |
+| reporte_alertas.xlsx | 4 | Eventos y alertas detectadas (Capa 1 + Capa 2) |
 | validacion_tecnica.xlsx | 6 | Validación OE4 completa |
 
 ---
@@ -285,17 +302,17 @@ El motor combina 3 señales simultáneas evaluadas en el instante actual de medi
 pip install -r requirements.txt
 ```
 
-| Librería | Uso |
-|---|---|
-| pandas | Manipulación de datos |
-| numpy | Operaciones numéricas |
-| scikit-learn | Modelos ML y validación |
-| xgboost | Modelos XGBoost |
-| imbalanced-learn | SMOTE para desbalance |
-| matplotlib | Generación de figuras |
-| seaborn | Visualización estadística |
-| openpyxl | Exportación Excel |
-| joblib | Serialización de modelos |
+| Librería | Versión | Uso |
+|---|---|---|
+| pandas | 3.0.2 | Manipulación de datos |
+| numpy | 2.4.4 | Operaciones numéricas |
+| scikit-learn | 1.8.0 | Modelos ML y validación |
+| xgboost | 3.2.0 | Modelos XGBoost |
+| imbalanced-learn | 0.14.1 | SMOTE para desbalance |
+| matplotlib | 3.10.9 | Generación de figuras |
+| seaborn | 0.13.2 | Visualización estadística |
+| openpyxl | 3.1.5 | Exportación Excel |
+| joblib | 1.5.3 | Serialización de modelos |
 
 ---
 
@@ -337,6 +354,7 @@ StratifiedKFold(random_state=42)
 - Chawla, N.V. et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. *JAIR*, 16, 321–357.
 - Kohavi, R. (1995). A study of cross-validation and bootstrap for accuracy estimation. *IJCAI*.
 - Bergmeir, C. & Benítez, J.M. (2012). On the use of cross-validation for time series predictor evaluation. *Information Sciences*.
+- Ng, A. (2018). *Machine Learning Yearning*. deeplearning.ai.
 
 ---
 
